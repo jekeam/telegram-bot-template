@@ -1,0 +1,14 @@
+[Unit]
+Description=<Description bot>
+After=multi-user.target
+
+[Service]
+User=<username>
+Type=idle
+# Environment=DISPLAY=:0 # optional for selenium
+WorkingDirectory=</home/word_folder>
+ExecStart=/home/<word_folder> /home/<word_folder>/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
