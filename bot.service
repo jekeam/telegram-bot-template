@@ -6,8 +6,8 @@ After=multi-user.target
 User=<username>
 Type=idle
 # Environment=DISPLAY=:0 # optional for selenium
-WorkingDirectory=</home/word_folder>
-ExecStart=/home/<word_folder> /home/<word_folder>/main.py
+WorkingDirectory=</home/bot_folder>
+ExecStart=/home/<bot_folder>/venv/bin/python /home/<bot_folder>/main.py
 Restart=always
 
 [Install]
