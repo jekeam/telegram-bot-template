@@ -23,7 +23,7 @@ Create **venv**
 Create DB
 - `venv/bin/python create_db.p`
 
-Run backgroud bot (with autostartup before restart server)
+Run background bot (autostartup after restart server)
 - Edit and optional - rename file **bot.service**
 - `sudo cp bot.service /etc/systemd/system/`
 - `sudo systemctl daemon-reload`
