@@ -35,27 +35,6 @@ error_file_handler.setLevel(logging.ERROR)
 streamHandler = logging.StreamHandler()
 streamHandler.setFormatter(log_formatter)
 
-# peewee_log = logging.getLogger('peewee')
-# peewee_log.setLevel(logging.ERROR)
-#
-# selenium_log = logging.getLogger('selenium.webdriver.remote.remote_connection')
-# selenium_log.setLevel(logging.INFO)
-#
-# urllib3_log = logging.getLogger('urllib3.connectionpool')
-# urllib3_log.setLevel(logging.ERROR)
-#
-# pil_log = logging.getLogger('PIL.PngImagePlugin')
-# pil_log.setLevel(logging.ERROR)
-#
-# _bot_log = logging.getLogger('telegram._bot')
-# _bot_log.setLevel(logging.ERROR)
-#
-# _client_log = logging.getLogger('httpx._client')
-# _client_log.setLevel(logging.ERROR)
-#
-# tg_ext_app_log = logging.getLogger('telegram.ext._application')
-# tg_ext_app_log.setLevel(logging.ERROR)
-
 app_log.addHandler(file_handler)
 app_log.addHandler(error_file_handler)
 app_log.addHandler(streamHandler)
