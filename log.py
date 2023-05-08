@@ -35,6 +35,16 @@ error_file_handler.setLevel(logging.ERROR)
 streamHandler = logging.StreamHandler()
 streamHandler.setFormatter(log_formatter)
 
+selenium_log = logging.getLogger('selenium.webdriver.remote.remote_connection')
+selenium_log.setLevel(logging.INFO)
+
+# for mute logs
+# httpcore = logging.getLogger('')
+# httpcore.setLevel(logging.ERROR)
+
+tg_ext_app_log = logging.getLogger('telegram.ext._application')
+tg_ext_app_log.setLevel(logging.ERROR)
+
 app_log.addHandler(file_handler)
 app_log.addHandler(error_file_handler)
 app_log.addHandler(streamHandler)

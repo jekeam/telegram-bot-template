@@ -36,4 +36,6 @@ class Action(BaseModel):
     id = PrimaryKeyField(unique=True)
     user_id = BigIntegerField(null=False)
     action_time = DateTimeField(null=True, default=datetime.now)
+    message_id = BigIntegerField(null=True)
+    parent_message_id = BigIntegerField(null=True)
     message = CharField(null=False, max_length=4096)

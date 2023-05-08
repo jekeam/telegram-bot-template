@@ -26,7 +26,7 @@ def insert_data_from_backup(table_obj):
 
 
 if "__main__" == __name__:
-    print("Press Enter to run process.")
+    print("Press Enter to run re/create database process.")
     input()
 
     s = datetime.now().strftime("%Y_%m_%d_%H_%M_%S")

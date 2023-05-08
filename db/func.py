@@ -41,13 +41,23 @@ def set_user_status(user_id: int, status: str) -> None:
     ).where(User.id == user_id).execute()
 
 
-def set_user_action(user_id: int, message: str) -> None:
+def set_user_action(user_id: int, message: str, message_id: int = None, parent_message_id: int = None) -> None:
     Action.insert(
         {
             Action.user_id: user_id,
             Action.message: message,
+            Action.message_id: message_id,
+            Action.parent_message_id: parent_message_id,
         }
     ).execute()
+
+
+def set_parrent_message_id(message_id: int, parent_message_id: int) -> None:
+    Action.update(parent_message_id=parent_message_id - 1).where(Action.message_id == message_id).execute()
+
+
+def get_user(user_id: int) -> ModelSelect:
+    return User.select().where(User.id == user_id)
 
 
 def set_last_touch(user_id) -> None:
