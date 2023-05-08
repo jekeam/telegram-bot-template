@@ -1,5 +1,5 @@
 import json
-
+API_KEY = "Yout API KEY form https://t.me/BotFather"
 LOG_LEVEL = "DEBUG"
 ADMINS = [
     # Our Admin IDs
