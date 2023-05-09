@@ -3,5 +3,10 @@
     "start": "Привет, задай свой вопрос",
     "send_msg": "Сообщение отправлено",
     "wait_answer": "Пожалуйста, подождите ответа"
+  },
+  "en": {
+    "start": "Hello, ask your question",
+    "send_msg": "Message sent",
+    "wait_answer": "Please wait for an answer"
   }
 }

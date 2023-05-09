@@ -10,4 +10,5 @@ DB_USER_STATUS_OFF = "off"
 with open("lang.json", "r", encoding="utf8") as f:
     import json
 
+    # lang_code see https://en.wikipedia.org/wiki/IETF_language_tag
     LANG = json.load(f)
