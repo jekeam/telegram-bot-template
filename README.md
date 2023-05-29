@@ -14,12 +14,12 @@ Create **venv**
 
 - `python3 -m venv venv`
 
-- ` venv/bin/python -m pip install --upgrade pip`
+- `venv/bin/python -m pip install --upgrade pip`
 
 - `venv/bin/python -m pip install -r requirements.txt`
 
 Create DB
-- `venv/bin/python create_db.p`
+- `venv/bin/python create_db.py`
 
 Run background bot (autostartup after restart server)
 - Edit and optional - rename file **bot.service**
